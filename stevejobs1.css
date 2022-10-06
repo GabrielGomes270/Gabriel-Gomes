@@ -10,7 +10,7 @@ html{
     scroll-behavior: smooth
 }
 
-header, .vida {
+header, .vida, .legado {
     width: 100%;
     height: 97.5vh;
     padding: 0 10%;
@@ -20,20 +20,23 @@ header, .vida {
     cursor: pointer;
 }
 nav {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px 0;
-    position: relative;
+    position: fixed;
     z-index: 100;
     border-bottom: 1px solid #000000;
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+    z-index: 100;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 10px 30px;
+    margin: 10px 150px;
 }
 nav ul li a {
     font-size: 20px;
@@ -47,10 +50,10 @@ nav ul li a:hover {
 }
 
 .text-box {
-    margin-top: 300px;
+    margin-top: 400px;
     max-width: 600px;
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     margin-left: 80px;
 }
 
@@ -65,7 +68,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     text-align: center;
 }
-.text-box p, .vida p {
+.text-box p, .vida p, .legado p, .ensinamentos p {
     font-size: 20px;
     text-align: left;
 }
@@ -91,11 +94,11 @@ section {
     padding: 0 10%;
     background: white;
 }
-section .vida {
+section .vida, section .legado, section .ensinamentos {
     padding: 20px 0;
     border-top: 1px solid #000000;
 }
-.vida h1{
+.vida h1, .legado h1, .ensinamentos h1{
     justify-content:center;
     text-align: center;
     text-justify: inter-word;
@@ -110,4 +113,22 @@ section .vida {
     justify-content: center;
     align-items: center;
 }
-
+.legado img {
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+}
+#legado_section {
+    margin-bottom: 150px;
+}
+.ensinamentos img {
+    margin-top: 20px;
+    margin-left: 10%;
+    width: 80%;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+}
