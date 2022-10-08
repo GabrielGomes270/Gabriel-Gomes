@@ -72,7 +72,6 @@ nav ul li a:hover {
     font-size: 20px;
     text-align: left;
 }
-
 .user-box {
     background: white;
     position: absolute;
@@ -98,15 +97,15 @@ section .vida, section .legado, section .ensinamentos {
     padding: 20px 0;
     border-top: 1px solid #000000;
 }
-.vida h1, .legado h1, .ensinamentos h1{
+.vida h2, .legado h2, .ensinamentos h2{
     justify-content:center;
     text-align: center;
     text-justify: inter-word;
-    font-size: 60px;
+    font-size: 50px;
     padding: 20px 0;
 }
 .vida img {
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 10%;
     width: 80%;
     padding: 0 10%;
@@ -114,9 +113,9 @@ section .vida, section .legado, section .ensinamentos {
     align-items: center;
 }
 .legado img {
-    margin-top: 20px;
-    margin-left: 10%;
-    width: 80%;
+    margin-top: 80px;
+    margin-left: 13%;
+    width: 75%;
     padding: 0 10%;
     justify-content: center;
     align-items: center;
@@ -125,10 +124,64 @@ section .vida, section .legado, section .ensinamentos {
     margin-bottom: 150px;
 }
 .ensinamentos img {
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 10%;
     width: 80%;
     padding: 0 10%;
     justify-content: center;
     align-items: center;
+}
+
+footer {
+    display:flex;
+    flex-direction: column;
+    background: #111;
+    width: 100%;
+    color: white;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer-conteudo {
+    margin-top: 20px;
+}
+.footer-conteudo p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+    color: #cacdd2;
+    text-align: center;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0 3rem 0;
+}
+.socials li {
+    margin: 0 10px;
+}
+.socials li a {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    justify-content: space-between;
+}
+.facebook-icon, .instagram-icon, .linkedin-icon, .youtube-icon {
+    width: 22px;
 }
